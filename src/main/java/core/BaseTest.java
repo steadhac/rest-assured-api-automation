@@ -2,34 +2,60 @@ package core;
 
 import com.relevantcodes.extentreports.LogStatus;
 import helper.BaseTestHelper;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import utils.ExtentReport;
 
 import java.io.IOException;
 
 public class BaseTest {
+        public static RequestSpecBuilder requestSpecBuilder;
+        public static ResponseSpecBuilder responseSpecBuilder;
+        public static ResponseSpecification responseSpecification;
+        public static RequestSpecification requestSpecification;
 
+    @BeforeSuite(alwaysRun = true)
 
-        @BeforeSuite(alwaysRun = true)
-        public void config() throws IOException {
+    public void config() throws IOException {
 
-            //Create the path in which we will create folder to keep html reports
-            String subfolderpath = System.getProperty("user.dir") + "/reports/" + BaseTestHelper.Timestamp();
-            //create sub folder
-            BaseTestHelper.CreateFolder(subfolderpath);
-            ExtentReport.initialize(subfolderpath + "/" + "API_Execution_Automation.html");
+        //Create the path in which we will create folder to keep html reports
+        String subfolderpath = System.getProperty("user.dir") + "/reports/" + BaseTestHelper.Timestamp();
+        //create sub folder
+        BaseTestHelper.CreateFolder(subfolderpath);
+
+        ExtentReport.initialize(subfolderpath + "/" + "API_Execution_Automation.html");
         }
 
-        @AfterMethod(alwaysRun = true)
+    @BeforeClass
 
-        public void getResult(ITestResult result) {
+    public void setupSpecBuilder () {
 
-            if (result.getStatus() == ITestResult.SUCCESS) {
+        requestSpecBuilder = new RequestSpecBuilder().addFilter(new RequestLoggingFilter())
+                .addFilter(new ResponseLoggingFilter());
 
-                ExtentReport.extentlog.log(LogStatus.PASS, "Test Case : " + result.getName() + " is passed ");
+        responseSpecBuilder = new ResponseSpecBuilder().expectStatusCode(200);
+
+        responseSpecification = responseSpecBuilder.build();
+
+        requestSpecification = requestSpecBuilder.build();
+
+    }
+    @AfterMethod(alwaysRun = true)
+
+    public void getResult(ITestResult result) {
+
+        if (result.getStatus() == ITestResult.SUCCESS) {
+
+           ExtentReport.extentlog.log(LogStatus.PASS, "Test Case : " + result.getName() + " is passed ");
 
             } else if (result.getStatus() == ITestResult.FAILURE) {
 
@@ -45,15 +71,15 @@ public class BaseTest {
             ExtentReport.extentreport.endTest(ExtentReport.extentlog);
         }
 
-        @AfterSuite(alwaysRun = true)
+    @AfterSuite(alwaysRun = true)
 
-        public void endReport() {
+    public void endReport() {
 
-            ExtentReport.extentreport.flush();
+        ExtentReport.extentreport.flush();
 
-            ExtentReport.extentreport.close();
+        ExtentReport.extentreport.close();
 
-            //Logging.setinstanceNull();
+        //Logging.setinstanceNull();
 
         }
 }
