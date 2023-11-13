@@ -20,7 +20,6 @@ import static org.testng.Assert.assertEquals;
 public class postUser {
 
     private static FileInputStream fileInputStream;
-
     private static FileInputStream fileInputStreamMethod(String requestBodyFileName) {
         try {
             fileInputStream = new FileInputStream(

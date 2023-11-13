@@ -18,7 +18,6 @@ import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
 public class APIChaininig extends BaseTest {
-
     @Test
     public void verifyBookstoreAddBooks() {
         ExtentReport.extentlog =

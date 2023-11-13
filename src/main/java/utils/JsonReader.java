@@ -18,13 +18,13 @@ public class JsonReader  {
 
     public static JSONObject getJsonData() throws IOException, ParseException {
 
-        //pass the path of the testdata.json file
+         //pass the path of the testdata.json file
         File filename = new File("resources//TestData//testdata.json");
-        //convert json file into string
+         //convert json file into string
         String json = FileUtils.readFileToString(filename, "UTF-8");
-        //parse the string into object
+         //parse the string into object
         Object obj = new JSONParser().parse(json);
-        //give jsonobject so that I can return it to the function everytime it get called
+         //give jsonobject so that I can return it to the function everytime it get called
         JSONObject jsonObject = (JSONObject) obj;
         return jsonObject;
     }

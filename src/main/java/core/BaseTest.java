@@ -18,11 +18,6 @@ import utils.ExtentReport;
 import java.io.IOException;
 
 public class BaseTest {
-        public static RequestSpecBuilder requestSpecBuilder;
-        public static ResponseSpecBuilder responseSpecBuilder;
-        public static ResponseSpecification responseSpecification;
-        public static RequestSpecification requestSpecification;
-
     @BeforeSuite(alwaysRun = true)
 
     public void config() throws IOException {
@@ -35,20 +30,6 @@ public class BaseTest {
         ExtentReport.initialize(subfolderpath + "/" + "API_Execution_Automation.html");
         }
 
-    @BeforeClass
-
-    public void setupSpecBuilder () {
-
-        requestSpecBuilder = new RequestSpecBuilder().addFilter(new RequestLoggingFilter())
-                .addFilter(new ResponseLoggingFilter());
-
-        responseSpecBuilder = new ResponseSpecBuilder().expectStatusCode(200);
-
-        responseSpecification = responseSpecBuilder.build();
-
-        requestSpecification = requestSpecBuilder.build();
-
-    }
     @AfterMethod(alwaysRun = true)
 
     public void getResult(ITestResult result) {
@@ -75,7 +56,7 @@ public class BaseTest {
 
     public void endReport() {
 
-        ExtentReport.extentreport.flush();
+        //ExtentReport.extentreport.flush();
 
         ExtentReport.extentreport.close();
 

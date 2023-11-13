@@ -1,11 +1,8 @@
 package pojo;
 
 public class CityRequest {
-
     private String name;
     private String temperature;
-
-
     public String getName() {
         return name;
     }

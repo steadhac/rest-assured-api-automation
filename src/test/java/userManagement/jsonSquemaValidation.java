@@ -8,7 +8,6 @@ import java.io.File;
 import static io.restassured.RestAssured.given;
 
 public class jsonSquemaValidation {
-
     @Test
     public void jsonSchemaValidation() {
         File schema = new File("resources/ExpectedSchema.json");
