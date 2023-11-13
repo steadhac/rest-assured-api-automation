@@ -9,6 +9,7 @@ import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
 public class getErgast extends BaseTest {
+
     @Test(description = "Validate the status code for GET users endpoint", groups = "RegressionSuite")
     public void validateResponseBodyGetPathParam() {
         ExtentReport.extentlog =

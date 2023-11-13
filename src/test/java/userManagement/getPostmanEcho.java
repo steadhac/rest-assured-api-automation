@@ -12,7 +12,6 @@ import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
 public class getPostmanEcho {
-
     @Test(groups = "SmokeSuite")
     public void validateWithTestDataFromJson() throws IOException, ParseException {
         String username = JsonReader.getTestData("username");

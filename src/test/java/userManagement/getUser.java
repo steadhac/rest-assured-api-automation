@@ -27,6 +27,7 @@ public class getUser extends BaseTest {
     String endpoint = getUrl("endpoint");
     String URL = serverAddress + endpoint;
     //SoftAssertionUtil softAssertion = new SoftAssertionUtil();
+
     public String getUrl(String key) {
         String endpoint = null;
         try {

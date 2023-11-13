@@ -9,7 +9,7 @@ public class PropertyReader {
 
     public static String propertyReader(String filePath, String key) {
         String value = null;
-        //Inputstream is required while loading into properties
+            //Inputstream is required while loading into properties
 
         try (InputStream input = new FileInputStream(filePath)) {
 

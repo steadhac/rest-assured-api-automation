@@ -6,7 +6,7 @@ import java.util.Date;
 public class BaseTestHelper {
 // create folder
 public static void CreateFolder(String path)  {
-    //File is a class inside java.io package
+     //File is a class inside java.io package
     File file = new File(path);
     if (!file.exists()) {
         file.mkdir();//mkdir is used to create folder
