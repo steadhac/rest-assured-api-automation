@@ -5,45 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e34f276-271b-4165-8f43-93fe16741122" name="Changes" comment="API automation with ExtentReport GET request and validate the response body using 'then'">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/Carolina_Steadham.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/Mon Nov 13 12-06-09 EST 2023/API_Execution_Automation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/carosteads.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/TestData/testdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/TestData/testdata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 13-33-37 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 13-38-37 EST 2023/API_Execution_Automation.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Mon Nov 13 13-41-09 EST 2023/API_Execution_Automation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 13-53-51 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 14-00-44 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 14-10-17 EST 2023/API_Execution_Automation.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Mon Nov 13 13-42-49 EST 2023/API_Execution_Automation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 14-11-12 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 14-15-19 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 14-22-59 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 14-23-43 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 15-03-30 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 15-04-31 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 15-05-54 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 15-08-03 EST 2023/API_Execution_Automation.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Mon Nov 13 14-06-56 EST 2023/API_Execution_Automation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 15-11-02 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 15-13-35 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 15-21-34 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Sun Nov 12 15-28-03 EST 2023/API_Execution_Automation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/StatusCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/StatusCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/helper/BaseTestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/BaseTestHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pojo/CityRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/CityRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pojo/PostRequestBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/PostRequestBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExtentReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExtentReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/PropertyReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Authentication/AuthenticationValidation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/userManagement/APIChaininig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userManagement/APIChaininig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/userManagement/getErgast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userManagement/getErgast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/userManagement/getPostmanEcho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userManagement/getPostmanEcho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/userManagement/getUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userManagement/getUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/userManagement/jsonSquemaValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userManagement/jsonSquemaValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/userManagement/postUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userManagement/postUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,11 +54,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Student/IdeaProjects/APItestAutomation",
+    "last_opened_file_path": "/Users/carosteadham/IdeaProjects/APIautomation",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
+    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -105,20 +70,7 @@
       <recent name="C:\Users\Student\IdeaProjects\APIautomation" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.getErgast.validateResponseBodyGetPathParam">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="APIautomation" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="APIautomation" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.getUser.testGetUserList">
     <configuration name="getErgast.validateResponseBodyGetPathParam" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIautomation" />
       <extension name="coverage">
@@ -137,7 +89,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="getUser.validateGetResponseBody" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="getPostmanEcho.validateResponseBodyGetDigestAuth" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIautomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="userManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="userManagement" />
+      <option name="MAIN_CLASS_NAME" value="userManagement.getPostmanEcho" />
+      <option name="METHOD_NAME" value="validateResponseBodyGetDigestAuth" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="getUser.testGetUserList" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIautomation" />
       <extension name="coverage">
         <pattern>
@@ -147,7 +117,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="userManagement" />
       <option name="MAIN_CLASS_NAME" value="userManagement.getUser" />
-      <option name="METHOD_NAME" value="validateGetResponseBody" />
+      <option name="METHOD_NAME" value="testGetUserList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -155,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="getUser.validateResponseHasItems" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="jsonSquemaValidation.jsonSchemaValidation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIautomation" />
       <extension name="coverage">
         <pattern>
@@ -164,8 +134,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="userManagement" />
-      <option name="MAIN_CLASS_NAME" value="userManagement.getUser" />
-      <option name="METHOD_NAME" value="validateResponseHasItems" />
+      <option name="MAIN_CLASS_NAME" value="userManagement.jsonSquemaValidation" />
+      <option name="METHOD_NAME" value="jsonSchemaValidation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -173,25 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="postUser.validatePatchWithResponsePojo" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIautomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="userManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="userManagement" />
-      <option name="MAIN_CLASS_NAME" value="userManagement.postUser" />
-      <option name="METHOD_NAME" value="validatePatchWithResponsePojo" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="postUser.validatePostWithPojoListObject" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="postUser.validatePostWithString" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIautomation" />
       <extension name="coverage">
         <pattern>
@@ -201,7 +153,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="userManagement" />
       <option name="MAIN_CLASS_NAME" value="userManagement.postUser" />
-      <option name="METHOD_NAME" value="validatePostWithPojoListObject" />
+      <option name="METHOD_NAME" value="validatePostWithString" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -211,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.getUser.testGetUserList" />
         <item itemvalue="TestNG.getErgast.validateResponseBodyGetPathParam" />
-        <item itemvalue="TestNG.getUser.validateGetResponseBody" />
-        <item itemvalue="TestNG.getUser.validateResponseHasItems" />
-        <item itemvalue="TestNG.postUser.validatePostWithPojoListObject" />
-        <item itemvalue="TestNG.postUser.validatePatchWithResponsePojo" />
+        <item itemvalue="TestNG.getPostmanEcho.validateResponseBodyGetDigestAuth" />
+        <item itemvalue="TestNG.jsonSquemaValidation.jsonSchemaValidation" />
+        <item itemvalue="TestNG.postUser.validatePostWithString" />
       </list>
     </recent_temporary>
   </component>
