@@ -6,6 +6,7 @@ import org.apache.commons.io.IOUtils;
 import org.testng.annotations.Test;
 import pojo.CityRequest;
 import pojo.PostRequestBody;
+import utils.APIEndpoints;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -35,7 +36,7 @@ public class postUser {
 
         Response response = given()
                 .header("Content-Type", "application/json")
-                .body("{\"name\":\"morpheus\",\"job\":\"QA Engineer\"}")
+                .body("{\"name\":\"morpheus\",\"job\":\"leader\"}")
                 .when()
                 .post("https://reqres.in/api/users");
         assertEquals(response.getStatusCode(), StatusCode.CREATED.code);
@@ -48,7 +49,7 @@ public class postUser {
 
         Response response = given()
                 .header("Content-Type", "application/json")
-                .body("{\"name\":\"caro\",\"job\":\"LeadQA\"}")
+                .body("{\"name\":\"morpheus\",\"job\":\"leader\"}")
                 .when()
                 .put("https://reqres.in/api/users/2");
         assertEquals(response.getStatusCode(), StatusCode.SUCCESS.code);
@@ -61,7 +62,7 @@ public class postUser {
 
         Response response = given()
                 .header("Content-Type", "application/json")
-                .body("{\"name\":\"caro\"}")
+                .body("{\"name\":\"morpheus\"}")
                 .when()
                 .patch("https://reqres.in/api/users/2");
         assertEquals(response.getStatusCode(), StatusCode.SUCCESS.code);
@@ -76,7 +77,7 @@ public class postUser {
                 .header("Content-Type", "application/json")
                 .body(IOUtils.toString(fileInputStreamMethod("postRequestBody.json")))
                 .when()
-                .post("https://reqres.in/api/users");
+                .post(APIEndpoints.getReqresUrl("/users"));
         assertEquals(response.getStatusCode(), StatusCode.CREATED.code);
         System.out.println("validatePostWithJsonFile executed successfully");
         System.out.println(response.getBody().asString());
@@ -112,7 +113,7 @@ public class postUser {
     public void validatePutWithPojo() {
 
         PostRequestBody putRequest = new PostRequestBody();
-        putRequest.setJob("Caro");
+        putRequest.setJob("John");
         putRequest.setName("LeadQA");
         Response response = given()
                 .header("Content-Type", "application/json")
@@ -186,7 +187,7 @@ public class postUser {
                 .header("Content-Type", "application/json")
                 .body(postRequest)
                 .when()
-                .post("https://reqres.in/api/users");
+                .post(APIEndpoints.getReqresUrl("/users"));
         assertEquals(response.getStatusCode(), StatusCode.CREATED.code);
         System.out.println("validatePostWithPojoListObject executed successfully");
         System.out.println(response.getBody().asString());
@@ -194,7 +195,7 @@ public class postUser {
 
     @Test
     public void validatePatchWithResponsePojo() {
-        String job = "LeadQA";
+        String job = "leader";
         PostRequestBody patchRequest = new PostRequestBody();
         patchRequest.setJob(job);
         Response response = given()
@@ -230,8 +231,8 @@ public class postUser {
         cityRequests.add(cityRequests2);
 
         PostRequestBody postRequest = new PostRequestBody();
-        postRequest.setJob("leadQA");
-        postRequest.setName("Caro");
+        postRequest.setJob("leader");
+        postRequest.setName("caro");
         postRequest.setLanguages(listLanguage);
         postRequest.setCityRequestBody(cityRequests);
 
@@ -239,7 +240,7 @@ public class postUser {
                 .header("Content-Type", "application/json")
                 .body(postRequest)
                 .when()
-                .post("https://reqres.in/api/users");
+                .post(APIEndpoints.getReqresUrl("/users"));
         PostRequestBody responseBody = response.as(PostRequestBody.class);
         System.out.println(responseBody.getCityRequestBody().get(0).getName());
         System.out.println(responseBody.getCityRequestBody().get(0).getTemperature());

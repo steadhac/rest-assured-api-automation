@@ -20,9 +20,8 @@ import static org.testng.Assert.assertEquals;
 public class APIChaininig extends BaseTest {
     @Test
     public void verifyBookstoreAddBooks() {
-        ExtentReport.extentlog =
-                ExtentReport.extentreport.
-                        startTest("verifyBookstoreAddBooks", "Validate 201 Status Code for POST method");
+        ExtentReport.extentlog = ExtentReport.extentreport.createTest("verifyBookstoreAddBooks", 
+            "Validate 201 Status Code for POST method");
         String authToken = generateAuthToken();
         Response response = given()
                 .header("Content-Type", "application/json")

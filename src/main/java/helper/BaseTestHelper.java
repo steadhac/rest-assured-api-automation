@@ -14,9 +14,7 @@ public static void CreateFolder(String path)  {
         System.out.println("Folder already created");
 }
 
-    /*
-     * Return current time stamp
-     */
+    // Return current time stamp
     public static String Timestamp() {
         Date now = new Date();
         String Timestamp = now.toString().replace(":", "-");
