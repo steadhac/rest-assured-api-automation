@@ -281,14 +281,23 @@ mvn test -X -Dtest=YourTestClass
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 📞 Support
+---
 
-For questions or issues:
-- Create GitHub issue
-- Email: [your-email@example.com]
-- Documentation: [Wiki/Confluence link]
+## 👤 Author
+
+**Carolina Steadham**
+- GitHub: [@steadhac](https://github.com/steadhac)
+- LinkedIn: [Carolina Steadham](https://linkedin.com/in/carolinacsteadham)
 
 ---
+
+<div align="center">
+
+**⭐ Star this repo if you find it helpful!**
+
+Made with ❤️ and Java
+
+</div>
 
 **Last Updated**: December 2025  
 **Framework Version**: 2.0.0  
