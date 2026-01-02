@@ -2,6 +2,12 @@
 
 REST API automation framework using Rest-Assured, TestNG, and ExtentReports for comprehensive API testing.
 
+[![Java](https://img.shields.io/badge/Java-17+-ED8B00.svg)](https://www.java.com/)
+[![REST API](https://img.shields.io/badge/REST-API-6366F1.svg)](https://restfulapi.net/)
+[![REST-Assured](https://img.shields.io/badge/REST--Assured-Testing-6366F1.svg)](https://rest-assured.io/)
+[![Hamcrest](https://img.shields.io/badge/Hamcrest-Matchers-25A162.svg)](http://hamcrest.org/)
+[![Shell](https://img.shields.io/badge/Shell-Bash-89E051.svg)](https://www.gnu.org/software/bash/)
+
 ## 🚀 Features
 
 - **Rest-Assured 5.4.0**: Modern REST API testing library
